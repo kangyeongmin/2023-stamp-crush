@@ -23,7 +23,9 @@ const AdminLogin = () => {
     mutationFn: postNaverLogin,
     onSuccess: (data: any) => {
       // console.log(data.headers);
-      // navigate(data.headers['location']);
+      // navigate(
+      //   ,
+      // );
     },
   });
 
@@ -35,7 +37,9 @@ const AdminLogin = () => {
     <Container>
       <LogoImg src={StampcrushLogo} alt="스탬프크러쉬로고" />
       <LoginButton onClick={goNaverLoginPage}>
-        <img src={NaverLoginButton} alt="네이버로그인" />
+        <a href="https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=7RLq6nq_iPu2JjNluOWm&redirect_uri=https://stampcrush.site/api/owners/oauth/naverstate=RycuGAGV4CIpaTpYOtj8Jw">
+          <img src={NaverLoginButton} alt="네이버로그인" />
+        </a>
       </LoginButton>
       {/* <button>카카오로그인</button> */}
     </Container>
